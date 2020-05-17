@@ -9,15 +9,15 @@
 		
 		//var email_to_send_to = document.getElementById("email_address").value;
 	
-		if (1==1)
-		{
+		
+		
 			Email.send({
             SecureToken : "9e7d0b6e-5977-4749-8953-7e447e28abd4",
 	        To : "ptreadway@suffolk.edu",
             From : "ADPR297@gmail.com",
 	        Cc : "pete.treadway@gmail.com",
 			Subject : "Yo....Contact Information Received",
-		    Body : "<h2 style=color:#228B22>We got your feedback dude!</h2><hr>"+
+		    Body : "<h2 style=color:#228B22>We got your feedback dude!</h2><hr><br>"+
 			"Name: Me"+
 			//document.getElementById("buyer_name").value+
 			//"<br>Contact Notes: "+document.getElementById("mytextarea").value+"<br>"+
@@ -26,7 +26,7 @@
 			.then(function(message){
 				alert("Email successfully sent.")
 			});
-		}}
+		}
 	</script>
 	
     <meta charset="utf-8" />

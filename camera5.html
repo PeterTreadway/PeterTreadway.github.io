@@ -9,6 +9,7 @@
  </script>
 
 	<script type="text/javascript">
+	var canvas1  = document.getElementById("canvas");
 		function sendEmail() {
 			Email.send({
             SecureToken : "9e7d0b6e-5977-4749-8953-7e447e28abd4",
@@ -20,7 +21,7 @@
 			Attachments : [
           	{
           		name : "me.png",
-          		data : canvas.toDataURL();
+          		data : canvas1.toDataURL();
           	}]
 			})
 			.then(function(message){

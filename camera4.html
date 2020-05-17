@@ -6,22 +6,13 @@
 
 	<script type="text/javascript">
 		function sendEmail() {
-		
-		//var email_to_send_to = document.getElementById("email_address").value;
-	
-		
-		
 			Email.send({
             SecureToken : "9e7d0b6e-5977-4749-8953-7e447e28abd4",
 	        To : "ADPR297@gmail.com",
             From : "ADPR297@gmail.com",
 	        Cc : "pete.treadway@gmail.com",
 			Subject : "Yo....Contact Information Received",
-		    Body : "<h2 style=color:#228B22>We got your feedback dude!</h2><hr><br>"+
-			"Name: Me"+
-			//document.getElementById("buyer_name").value+
-			//"<br>Contact Notes: "+document.getElementById("mytextarea").value+"<br>"+
-			//"<hr>"
+		    Body : "<h2 style=color:#228B22>We got your feedback dude!</h2><hr><br>"
 			})
 			.then(function(message){
 				alert("Email successfully sent.")

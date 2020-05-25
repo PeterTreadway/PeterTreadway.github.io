@@ -41,13 +41,14 @@ alert("image byte len: "+mydataURL.length)
 		}
 	</script>
 
+<script type="text/javascript">
 ////////////////////////////////////////////////////////	
 //
 // convertCanvasToImage(canvas)
 //
+// Purpose: Converts canvas to an image
+//
 ////////////////////////////////////////////////////////
-<script type="text/javascript">
-// Converts canvas to an image
 function convertCanvasToImage(canvas) {
   var image = new Image();
   image.src = canvas.toDataURL("image/png");
@@ -79,9 +80,7 @@ function convertCanvasToImage(canvas) {
 }
 </script>
 
-<h1>Take a pic and upload....</h1>
-
-<div class="demo-conversion">Read <a href="https://davidwalsh.name/browser-camera" target="_top">Camera and Video Control with HTML5</a></div>
+<h1>Take your picture and upload....</h1>
 	<!--
 		Ideally these elements aren't created until it's confirmed that the
 		client supports video/camera, but for the sake of illustrating the

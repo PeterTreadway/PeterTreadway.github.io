@@ -5,7 +5,7 @@
 <head>	
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	Test #1
+	Test #TWO
 	<title>System Feedback</title>
 <!--- 
 Include email javascript API
@@ -13,6 +13,22 @@ See: https://smtpjs.com/
 -->
 	 <script src="https://smtpjs.com/v3/smtp.js">
  </script>
+ 
+ <!-- Stop Video-->
+<script>
+function stopStreamedVideo() {
+//xxx
+var videoElem = document.getElementById('video');
+  const stream = videoElem.srcObject;
+  const tracks = stream.getTracks();
+
+  tracks.forEach(function(track) {
+    track.stop();
+  });
+
+  videoElem.srcObject = null;
+}
+</script>
 
 <!--
 Canvas
@@ -368,7 +384,12 @@ xx.value=mydataURL;
 }
 
 </script>
-	
+
+<!--
+Stop recording
+-->
+<input type="button"  value="Stop Recording" onclick="stopStreamedVideo();"/><br>
+	<a onclick="stopStreamedVideo(video);" href="#top">Change Paragraph #1</a>
 <textarea id="mytextarea" rows="10" cols="300">
 foobar
 </textarea>  

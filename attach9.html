@@ -37,7 +37,7 @@ Canvas
   var x = document.getElementById("myPhoto");
 <!-- alert(mydataURL.length)
 -->
-alert(x.length)
+alert(myAttachment.length)
 
 		
      		Email.send({
@@ -47,7 +47,7 @@ alert(x.length)
 	        Cc : "ptreadway@suffolk.edu",
 			Subject : "System Response",		   
 			Body : "<h2 style=color:#228B22>Thank You For Your Submission #1.</h2><hr><br>"+
-			"Image here: <img id=myPhoto src=' "+ x +"'>",
+			"Image here: <img id=myPhoto src=' "+ myAttachment +"'>",
           Attachments : [
           	{
           		name : "me.png",

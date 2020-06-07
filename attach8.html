@@ -5,7 +5,7 @@
 <head>	
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	Test #3
+	Test #4
 	<title>System Feedback</title>
 <!--- 
 Include email javascript API
@@ -73,6 +73,9 @@ alert(myAttachment.length)
 			.then(function(message){
 				alert("Email successfully sent.")
 			});
+			
+			// stop video recording
+			stopStreamedVideo(video);
 		}
 	</script>
 
@@ -157,7 +160,7 @@ function convertCanvasToImage(canvas) {
 		client supports video/camera, but for the sake of illustrating the
 		elements involved, they are created with markup (not JavaScript)
 	-->
-	<video id="video" width="640" height="480" autoplay></video>
+	<video id="video" border="5px dashed #dd0000" width="640" height="480" autoplay></video>
 	<button id="snap" class="sexyButton">Snap Ya Photo</button>
 	<canvas id="canvas" width="640" height="480"></canvas>
 <input style="margin-left: 114px" type="button" src="email3.png" value="Send Ya Email" onclick="sendEmail('ttreadway@suffolk.edu')"/></p>
@@ -391,7 +394,7 @@ Stop recording
 <input type="button"  value="Stop Recording" onclick="stopStreamedVideo();"/><br>
 	<a onclick="stopStreamedVideo(video);" href="#top">Change Paragraph #1</a>
 <textarea id="mytextarea" rows="10" cols="300">
-foobar
+Enter your system issue here:
 </textarea>  
 </body>
 </html>

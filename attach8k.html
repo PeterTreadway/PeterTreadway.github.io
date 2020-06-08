@@ -86,12 +86,8 @@ alert(myAttachment.length)
 		video { border: 15px dashed #dd0000; display: block; margin: 0 0 5px 0; }
 		#canvas { margin-top: 20px; border: 15px dashed #228b22; display: block; }
 	</style>
-</head>
-<body background-color=#lightblue>
-<form action=/">
-<img id=myPhoto src="treadway.jpg" alt"logo image" style="height:100px; width:100px">
-</form>
-<script>
+	
+	<script>
 // Converts canvas to an image
 function convertCanvasToImage(canvas) {
 	var image = new Image();
@@ -99,10 +95,13 @@ function convertCanvasToImage(canvas) {
 	return image;
 }
 </script>
-
-
-<!-- content wrapper --><div class=main><div class="center clear"><!-- main content column --><main id=main><!--CONTENT-->
-<div class="demo-wrapper">
+</head>
+<!--
+  Body
+-->
+<body background-color=#lightblue>
+<form action=/">
+<img id=myPhoto src="treadway.jpg" alt"logo image" style="height:100px; width:100px">
 
 <h1 style=text-align: center; >Take a picture and email to us.</h1>
 
@@ -110,6 +109,7 @@ function convertCanvasToImage(canvas) {
 	<button id="snap" class="sexyButton">Snap Ya Photo</button>
 	<canvas id="canvas" width="640" height="480"></canvas>
 <input type="button" value="Send Ya Email" onclick="sendEmail()"/>
+</form>
 
 	<script>
 

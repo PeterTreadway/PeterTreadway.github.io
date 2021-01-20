@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>	
@@ -222,7 +223,7 @@ function convertCanvasToImage(canvas) {
  
   <div class="row">
     <div class="col-sm-6" style="background-color:black;">
-	<video id="video" style="text-align:center" width="320" height="240" autoplay></video>
+	<video id="video" style="text-align:center" width="320" height="240" autoplay="true" muted="true" playsinline="true" controls="true" ></video>
     </div>
 
     <div class="col-sm-6" style="background-color:black;">
@@ -232,7 +233,7 @@ function convertCanvasToImage(canvas) {
 </div>
 	<br>
 <button id="snap" class="snap">Snap Photo</button>
-<input style="border-radius: 25px; font-weight: normal;  background-image: linear-gradient(to bottom,rgba(34,139,34,.5), rgba(34,139,34,0));padding: 10px;  " type="button" class="snap" value="Email Picture" onclick="sendEmail('peter.treadway@mass.gov')"/></p>
+<input style="color:white; border-radius: 25px; font-weight: normal;  background-image: linear-gradient(to bottom,rgba(34,139,34,.5), rgba(34,139,34,0));padding: 10px;  " type="button" class="snap" value="Email Picture" onclick="sendEmail('peter.treadway@mass.gov')"/></p>
 	<script>
 
 		// Put event listeners into place
@@ -337,8 +338,9 @@ font-size: 16px;
   font-weight: normal;
   background-image: linear-gradient(to bottom,rgba(34,139,34,.5), rgba(34,139,34,0));
   padding: 10px;
-margin-left:60px;
-margin-right:auto;  
+ margin-left:60px;
+ margin-right:auto;  
+ color:white;
 }	
 
 

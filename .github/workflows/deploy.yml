@@ -2,8 +2,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - index.html
 
 jobs:
   deploy:
@@ -20,4 +18,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /atlant10_pete/test-deploy/
+          server-dir: /atlant10_pete/
